@@ -1,0 +1,38 @@
+base:
+  version: 1.0
+    css:
+      theme:
+        assets/css/theme-fonts.css : { type: file, minified: true }
+    js:
+      assets/js/base.js : { type: file, minified: true, attributes: {   defer: true, async: true } }
+
+bmd:
+  version: 4.0.0-beta
+  license:
+    name: MIT
+    url: https://fezvrasta.github.io/bootstrap-material-design/docs/4.0/about/license/
+    gpl-compatible: true
+  css:
+    theme:
+      assets/css/material-icons.css : { type: file, minified: true }
+      assets/css/google-fonts.css : { type: file, minified: true }
+  js:
+    assets/js/bootstrap-material-design.min.js : { type: file, minified: true, attributes: { async: true } }
+
+fontawesome:
+  version: 4.7.0
+  license:
+    name: MIT
+    url: https://fortawesome.github.io/Font-Awesome/license/
+    gpl-compatible: true
+  css:
+    theme:
+      assets/css/theme-fonts.css : { type: file, minified: true }
+
+popperjs:
+  version: 1.14.2
+  license:
+    name: MIT
+    gpl-compatible: true
+  js:
+    assets/js/popper.min.js : { type: file, minified: true, attributes: { async: true } }

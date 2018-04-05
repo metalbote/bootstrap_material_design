@@ -1,0 +1,34 @@
+bootstrap_material_design.screen-xs-max:
+  label: screen-xs-max
+  mediaQuery: 'screen and (max-width: 575.98px)'
+  weight: '1'
+  multipliers:
+    - '1x'
+    - '2x'
+bootstrap_material_design.screen-sm-min:
+  label: screen-sm-min
+  mediaQuery: 'screen and (min-width: 576px)'
+  weight: '2'
+  multipliers:
+    - '1x'
+bootstrap_material_design.screen-md-min:
+  label: screen-md-min
+  mediaQuery: 'screen and (min-width: 768px)'
+  weight: '3'
+  multipliers:
+    - '1x'
+    - '2x'
+bootstrap_material_design.screen-lg-min:
+  label: screen-lg-min
+  mediaQuery: 'screen and (min-width: 992px)'
+  weight: '4'
+  multipliers:
+    - '1x'
+    - '2x'
+bootstrap_material_design.screen-xl-min:
+  label: screen-xl-min
+  mediaQuery: 'screen and (min-width: 1200px)'
+  weight: '5'
+  multipliers:
+    - '1x'
+    - '2x'

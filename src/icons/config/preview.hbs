@@ -1,0 +1,104 @@
+<!doctype HTML>
+<html>
+	<head>
+		<title>Icons Preview!</title>
+		<meta charset="utf-8">
+		<link href="../css/base.css" rel="stylesheet">
+<style>
+  .icons {
+    margin: 0 -10px 20px;
+    overflow: hidden;
+  }
+  .icons-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  .icons li {
+    float: left;
+    width: 10%;
+    height: 115px;
+    padding: 10px;
+    font-size: 10px;
+    line-height: 1.4;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #fff;
+  }
+  .icon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    line-height: 1;
+    background-size: 100%;
+  }
+  .icon-class {
+    display: block;
+    text-align: center;
+    word-wrap: break-word;
+  }
+</style>
+		<script>
+			{{{loaderText}}}
+			{{{embedText}}}
+			{{#with cssFiles}}
+			grunticon(["{{svg}}", "{{png}}", "{{fallback}}"], grunticon.svgLoadedCallback);
+		</script>
+		<noscript><link href="{{fallback}}" rel="stylesheet"></noscript>
+{{/with}}
+	</head>
+	<body>
+<div class="container">
+		<h1>Icons Preview!</h1>
+
+  <div class="row">
+    <div class="col-12" role="main">
+      <div class="icons">
+        <ul class="icons-list">
+          {{#each icons}}
+            {{#with this}}
+              <li>
+                <div {{selectorType}}="icon {{selectorString}}{{name}}" style="width: 48px; height: 48px;"></div>
+                <div class="icon-class">{{prefix}}{{name}}</div>
+              </li>
+            {{/with}}
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+		<h2 id="embedded-svg-option">Embedded SVG option</h2>
+		<div class="row">
+      <div class="col-12">
+		<p>(The <code>data-grunticon-embed</code> attribute tells grunticon to inject SVG inline):</p>
+
+		<pre><code>icon-assessment:</code></pre><div class="icon--assessment" data-grunticon-embed style="width: 48px; height: 48px;" ></div><hr/>
+
+		<style>
+			.icon-burger {
+				width: 32px;
+				height: 30px;
+				display: inline-block;
+			}
+			  .icon-burger.alt .cheese {
+		                fill: red;
+		            }
+				 .icon-burger.alt .buns {
+		                fill: orange;
+		            }
+				  .icon-burger.alt .burger {
+		                fill: yellow;
+		            }
+		 		 .icon-burger.alt .lettuce {
+		                fill: green;
+		            }
+
+		</style>
+
+		<pre><code>icon-assessment (styled variation):</code></pre><div class="icon--assessment alt" data-grunticon-embed></div><hr/>
+    </div>
+ </div>
+</div>
+</body>
+</html>

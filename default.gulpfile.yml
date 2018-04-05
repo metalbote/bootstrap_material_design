@@ -1,0 +1,45 @@
+theme:
+  name: "Fezvrasta's Bootstrap Material Design"
+  description: "Base Theme based upon fezvrasta's amazing work"
+paths:
+  url: "nabidevops.site"
+fonts:
+  src: ["src/fonts/fonts.list"]
+  srcdir: ["src/fonts"]
+  cssdir: "assets/css"
+  dest: "assets/fonts"
+images:
+  src: ["src/img/**/*.{jpg,jpeg,gif,png}"]
+  dest: "assets/img"
+icons:
+  src: ["src/icons/**/*.svg"]
+  dest: "assets/icons"
+scripts:
+  src: ["src/js/**/*.js"]
+  dest: "assets/js"
+  lint:
+    enabled: true
+    failOnError: false
+styles:
+  src: ["src/scss/**/*.scss"]
+  dest: "assets/css"
+  buildSourceMaps: true
+  browsers: ["last 2 version", "> 5%", "IE 9"]
+  lint:
+    enabled: true
+    failOnError: false
+browserSync:
+  site:
+    enabled: true
+    port: 3001
+    ui:
+      port: 3002
+    open: "local"
+    reloadDelay: 50
+    reloadDebounce: 750
+    injectChanges: true
+    ghostMode: true
+    injectChanges: true
+    notify: false
+    online: true
+    browser: ["google chrome"]

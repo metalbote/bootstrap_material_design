@@ -1,0 +1,17 @@
+name: "Fezvrasta's Bootstrap Material Design"
+description: "Base Theme based upon fezvrasta's amazing work"
+type: theme
+base theme: stable
+
+core: 8.x
+version: 8.x-0.0.1
+package: bootstrap
+
+libraries:
+  - bootstrap_material_design/base
+  - bootstrap_material_design/bmd
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
